@@ -3,253 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AKASH PORTFOLIO</title>
-    
+    <title>Bhukya Akash | Futuristic Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/00c4dbff8f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
 
-      
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="logo_1.png" class="logo">
-            <ul id="sidemenu">
-                
-                
-                <li><a href="#header"> Home</a></li>
-                <li><a href="#about"> About</a></li>
-                <li><a href="#services"> Services</a></li>
-                <li><a href="#portfolio"> Portfoilo</a></li>
-                <li><a href="#contact"> Contact</a></li>
-                
-                
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-        
+    <div id="particles-js"></div>
+
+    <header class="header">
+        <nav class="navbar container">
+            <h1 class="logo-text">AKASH<span>.</span></h1>
+            <ul class="nav-links" id="sidemenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark close-btn" onclick="closemenu()"></i>
             </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
+            <i class="fa-solid fa-bars menu-btn" onclick="openmenu()"></i>
         </nav>
-        <div class="header-text">
-            <p>SOFTWARE ENGINEER</p>
-            <h1>Hai , Iam <span>Bhukya Akash </span><br>from Telangana</h1>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <p class="reveal-text">INNOVATING THE DIGITAL SPACE</p>
+            <h1 class="main-title">Hi, I'm <span>Bhukya Akash</span></h1>
+            <p class="subtitle">Software Engineer | AI Enthusiast | Full Stack Developer</p>
+            <div class="hero-btns">
+                <a href="#portfolio" class="btn">View My Work</a>
+                <a href="AKASHRESUME.pdf" download="Bhukya_Akash_Resume" class="btn btn-outline">
+                    <i class="fa-solid fa-download"></i> Get Resume
+                </a>
+            </div>
         </div>
-    </div>
-</div>
-<!.............................about.................>
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="aboutme.JPG" >
+    </section>
+
+    <section id="about" class="section">
+        <div class="container about-container">
+            <div class="about-img">
+                <img src="aboutme.JPG" alt="Bhukya Akash Portrait">
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>Dedicated Computer Science graduate from IIIT Kottayam. I bridge the gap between complex backend logic and sleek, intuitive user interfaces.</p>
                 
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">
-                    About me
-                </h1>
-                <p>
-                    Dedicated and detail-oriented Computer Science graduate seeking a challenging position as a Software Engineer to apply academic knowledge and hands-on programming skills. Eager to contribute to innovative projects, collaborate with cross-functional teams, and further develop expertise in software development.
-                </p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')" > Experience</p>
-                    <p class="tab-links" onclick="opentab('education')"> Education</p>
-
+                <div class="tabs">
+                    <button class="tab active" onclick="opentab('skills', this)">Skills</button>
+                    <button class="tab" onclick="opentab('experience', this)">Experience</button>
+                    <button class="tab" onclick="opentab('education', this)">Education</button>
                 </div>
-                <div class="tab-contents active-tab" id="skills">
+
+                <div id="skills" class="tab-content active">
                     <ul>
-                            
-                        <li><span> SOFTWARE ENGINEER</span> <BR> Build and managing the softwares</li>
-                        <li><span> WEB DEVELOPER </span> <BR> Web-pages development</li>
-                        <li><span> GRAPHICAL DESIGNER</span> <BR> Making promtional contents</li>
+                        <li><span>Programming</span> - C, Python, FastAPI , MachineLearning, DeepLearning,</li>
+                        <li><span>AI & ML</span> - Agri Surgeon (Plant Disease Detection)</li>
+                        <li><span>Tools</span> - Git, Docker, GCP, AWS, VS Code</li>
                     </ul>
                 </div>
-                <div class="tab-contents" id="experience">
+
+                <div id="experience" class="tab-content">
                     <ul>
-                        <LI><span>THE CHAIR</span><BR>Managing the student branch of the IEEE</LI>
-                        <li><span> ASSISTANT PORTFILO MANAGER </span> <BR> Managing the customer demant account at Growth Arrow</li>
-                        <li><span> WEB DEVELOPER </span> <BR> Web-pages development at The Spark Foundation</li>
-                        <li><span>GRAPHICAL DESIGNER</span> <BR> Making promtional contents at IEEE SB IIITKOTTAYAM</li>
+			<li><span>Cloud Computing </span> - TechnoHacks solutions pvt ltd.</li>
+                        <li><span>IEEE</span> - Student Branch Chair</li>
+                        <li><span>Finance</span> - Assistant Portfolio Manager</li>
+                        <li><span>Dev</span> - Web Developer</li>	
                     </ul>
                 </div>
-                <div class="tab-contents" id="education">
-                     <ul>
-                          
-                        <li><span> 2020-2024 </span> <BR> B.TECH IN COMPUTER SCIENCE AND ENGINEERING AT IIIT-KOTTAYAM</li>
-                        <li><span> 2018-2020 </span> <BR> HIGHER SECONDARYIN MPC AT TTWR SOE KHAMMAM</li>
-                        <li><span> -2018</span> <BR> SCHOOLING AT SAI SPANDANA HIGH SCHOOL</li>
+
+                <div id="education" class="tab-content">
+                    <ul>
+			<li><span>M.Tech</span> -NIT bhopal (ID:24216061110)</li><span>Automation and Robotics -> 7.77</span>
+                        <li><span>B.Tech CSE</span> - IIIT Kottayam (ID: 2020BCS0181)</li><span>Computer science and Engineering -> 7.3</span>
+                        <li><span>Intermediate</span> - TTWR School and college of excellence</li><span>MPC-> 86.3</span>
+			<li><span>Schooling</span>-Sai Spandana High School</li><span>9.2 CGPA</span>
                     </ul>
                 </div>
-            </div>
-         
-        </div>
-    </div>  
-</div>
-
-<!........................services....................>
-
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Desgin</h2>
-                <p>Create engaging user interfaces,<br> optimize website performance,<br> and implement responsive designs <br>in a dynamic web design role.</p>
-                <a href="#">Learn More</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-crop"></i>
-                <h2>Graphical Design</h2>
-                <p>Craft visually compelling graphics,<br> adhere to brand guidelines,<br> and create engaging designs<br> for digital and print media in <br>a graphical design role.</p>
-                <a href="#"> Learn More</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-desktop"></i>
-                <h2>PORTFILO MANAGER</h2>
-                <p>Oversee portfolio performance, <br>analyze market trends, and make<br> strategic investment decisions as <br>a portfolio manager.</p>
-                <a href="#https://drive.google.com/file/d/1fvC01x2g_7raIVOX0va_7IqzJhqIZdXe/view?usp=sharing"> Learn More</a>
             </div>
         </div>
+    </section>
 
-    </div>
-
-</div>
-<!................................PORTFILO..............................>
-<div>
-    <div id="portfolio">
+    <section id="services" class="section">
         <div class="container">
-            <h1 class="sub-title">My work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="work_1.jpg">
-                    <div class="layer">
-                        <h3>Tourism Management System</h3>
-                        <p>
-                            The admin can change the packages and manage the travelling of the customer
-                        </p>
-                        <a href="https://github.com/bhukyaakash/toursim-and-travelling-management.git">
-                            <i class="fa-solid fa-link"></i>
-                        </a>
+            <h2 class="center">My Services</h2>
+            <div class="services-list">
+                <div class="glass-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Building high-performance, scalable web applications using the latest tech.</p>
+                </div>
+                <div class="glass-card">
+                    <i class="fa-solid fa-brain"></i>
+                    <h3>AI Solutions</h3>
+                    <p>Integrating Machine Learning models into real-world applications, specializing in image recognition and data analysis.</p>
+                </div>
+                <div class="glass-card">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating futuristic, user-centric interfaces with a focus on seamless interaction and clean aesthetics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2 class="center">My Work</h2>
+            <div class="work-grid">
+                <div class="work-card">
+                    <img src="work_1.jpg" alt="Agri Surgeon Project">
+                    <div class="work-layer">
+                        <h3>Agri Surgeon</h3>
+                        <p>A plant disease detection and advisory system utilizing a hybrid SVM model.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="work_2.jpg">
-                    <div class="layer">
+                <div class="work-card">
+                    <img src="work_2.jpg" alt="Banking System Project">
+                    <div class="work-layer">
                         <h3>Banking System</h3>
-                        <p>
-                            send money and check the transactions timely.
-                        </p>
-                        <a href="https://github.com/bhukyaakash/banking-system.git"> 
-                            <i class="fa-solid fa-link"></i>
-                        </a>
+                        <p>A secure full-stack web application for managing digital banking transactions.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="work-3.png">
-                    <div class="layer">
-                        <h3>Common Website</h3>
-                        <p>
-                            Where user can login once and can manage this social media accounts 
-                        </p>
-                        <a href="https://github.com/bhukyaakash/common-websit-for-google-and-fb.git">
-                            <i class="fa-solid fa-link"></i>
-                        </a>
+                <div class="work-card">
+                    <img src="work-3.png" alt="Tourism Management Project">
+                    <div class="work-layer">
+                        <h3>Tourism Hub</h3>
+                        <p>An interactive platform for travel planning and local tourism management.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See More</a>
-    </div>
-</div>
-<!...............................CONTACT  ME.....................>
-<div>
-<div id="contact">
-    <div class="container">
-        <div class="contact-left">
-            <h1 class="sub-title">
-                Contact Me
-            </h1>
-            <p > <i class="fa-solid fa-paper-plane"></i>bhukyaravi1431@gmail.com</p>
-            <p> <i class="fa-solid fa-phone"></i>9182664585</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/akashbukya/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="linkedin.com/in/akash-bhukya-077a59201"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/bhukyaakash"><i class="fa-brands fa-github"></i></a>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container contact-container">
+            <div class="contact-left">
+                <h2>Let's Connect</h2>
+                <div class="contact-item">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <p>bhukyaakash99@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+91 9182664585</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/akash-bhukya-077a59201/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/bhukyaakash"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.youtube.com/@skillbasics"><i class="fa-brands fa-youtube"></i></a>
+                </div>
             </div>
-            <a href="Akash resume..pdf" download class="btn btn2">Download CV</a>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" class="contact-form">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <span id="msg"></span>
+            </div>
         </div>
-        
-        <div class="contact-right">
-            <form  name="submit-to-google-sheet">
-                <input type="text" name="Name" placeholder="Your Name" required>
-                <input type="email" name="Email" placeholder="Your Email" required>
-                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            
-            <span id="msg">
-                 
-            </span>
+    </section>
+
+    <footer>
+        <div class="copyright">
+            <p>© 2026 Bhukya Akash | Software Engineer Portfolio</p>
+        </div>
+    </footer>
+
+    <div class="chat-toggle" onclick="toggleChat()">🤖</div>
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <span>Akash AI Assistant</span>
+            <span onclick="toggleChat()" style="cursor:pointer">✖</span>
+        </div>
+        <div id="chatBody" class="chat-body">
+            <p class="bot">Hello 👋 I'm Akash's AI. Ask me about his skills, projects, or resume!</p>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chatInput" placeholder="Type here..." onkeypress="handleChat(event)">
         </div>
     </div>
-    <div class="copyright">
-        <p>Copyright Akash . Made with <i class="fas fa-heart"> </i></p>
 
-    </div>
-</div>
-</div>
-
-<!.........................js........................>
-
-<script>
-    
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right="0";
-    }
-    function closemenu(){
-        sidemenu.style.right="-200px";
-    }
-</script>
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbx5bFznDBk8cqPKuFxBtupWmHsMbL5nvUOI29lANyHZi9h5Qa5CE8I_R0vZTi8JbCDc/exec '
-    const form = document.forms['submit-to-google-sheet']
-  
-    const msg = document.getElementById("msg")
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully ! Thank You! "
-            setTimeout(function(){
-                msg.innerHTML=""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+    <script src="script.js"></script>
 </body>
-
 </html>
-
